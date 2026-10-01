@@ -34,3 +34,25 @@ foreign key (id_aluno) references alunos(id_aluno),
 foreign key (id_plano) references planos(id_planos),
 foreign key (id_instrutor) references instrutores(id_instrutor)
 );
+
+insert into planos(nome, valor_mensal, duracar_meses) values
+('Mensal Básico', 89.90, 1),
+('Trimestral fit', 79.90, 3),
+('Semestral Plus', 69.90, 6),
+('Anual VIP', 59.90, 12); 
+
+insert into instrutores(nome, especialidade, telefone) values
+('Pedrão Extra Black', 'Crossfit', '99 6969-4141'),
+('Betão White Chocolate','Musculação', '99 5555-4443'),
+('Seu Zé', 'Pilates', '99 8888-7777'),
+('LiL Luis "Pega no pesado" Silveira', 'Musculação', '99 6767-0000');
+
+insert into alunos(nome,cpf,telefone,data_nascimento) values
+('John Treina Mole', '111.111.111-12', '99 4141-0101', "1999-01-12"),
+('Vitinho Molesta Velho', '222.222.222-23', '99 5151-1111', "2005-05-29"),
+('Eric Cartman', '555.555.555-56', '99 6667-6667', "2013-09-11");
+
+insert into matriculas(id_aluno, id_plano, id_instrutor) values
+(1,5,1),
+(2,4,3),
+(5,1,5);  
